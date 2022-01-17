@@ -1,6 +1,24 @@
 # DiscordBot
 A discord bot built in python, on the discord API
 
+### Table of contents
+* Introduction
+* Requirements
+* Installation
+* Issue tracker
+* Code conventions
+* Contribution
+* Citing
+* Contact
+* Changelog
+
+
+### Requirements
+
+
+### Installation
+
+
 ### Issue tracker
 
 
