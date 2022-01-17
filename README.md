@@ -14,11 +14,11 @@ A discord bot built in python, on the discord API
 
 
 ### Todo
-[x] Store user information
-[] Rock-paper-scissors
-[] 8ball
-[] Dice
-[] Play music
+- [ ] Store user information
+- [ ] Rock-paper-scissors
+- [ ] 8ball
+- [ ] Dice
+- [ ] Play music
 
 
 ### Requirements
