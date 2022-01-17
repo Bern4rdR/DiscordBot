@@ -14,7 +14,7 @@ A discord bot built in python, on the discord API
 
 
 ### Todo
-[] Store user information
+[x] Store user information
 [] Rock-paper-scissors
 [] 8ball
 [] Dice
