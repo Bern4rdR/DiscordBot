@@ -13,6 +13,14 @@ A discord bot built in python, on the discord API
 * Changelog
 
 
+### Todo
+[] Store user information
+[] Rock-paper-scissors
+[] 8ball
+[] Dice
+[] Play music
+
+
 ### Requirements
 
 
