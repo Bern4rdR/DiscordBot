@@ -5,7 +5,7 @@ A discord bot built in python, on the discord API
 
 
 ### Code conventions
-##### File organizing
+#### File organizing
 
 **Commenting:**  1-line comments above the code line
 
@@ -17,7 +17,7 @@ A discord bot built in python, on the discord API
 ### Contribution
 Contribute by adding a feature or clean up som code
 
-##### Contributors
+#### Contributors
 
 
 ### Citing
