@@ -2,6 +2,7 @@
 A discord bot built in python, on the discord API
 
 ### Table of contents
+* Todo
 * Introduction
 * Requirements
 * Installation
