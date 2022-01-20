@@ -39,7 +39,7 @@ To install the discord.py module in the command prompt using the command `pip in
 For a guidde on the installation, click [here](https://pypi.org/project/discord.py/). 
 Note that discord.py only works with **Python 3.5+**.
 
-For the requests package, type `pip instal requests` into your command prompt.
+For the requests package, type `pip install requests` into your command prompt.
   
 To create your own bot, first you need to create an application in the [developer portal](https://discord.com/developers/applications).
 
