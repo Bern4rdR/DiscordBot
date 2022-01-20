@@ -23,10 +23,11 @@ A discord bot built in python, on the discord API
 
 
 ### Requirements
-
+- python 3
+- discord.py module
 
 ### Installation
-
+run the ´pip install discord.py´ command
 
 ### Issue tracker
 
