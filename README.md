@@ -35,7 +35,7 @@ Functions will include a rock-paper-scissors game that keeps track of the score 
 ### Installation
 The latest versoin of **Python** is available [here](https://www.python.org/downloads/).
 
-To install the discord.py module in the command prompt using the command `pip install discord.py`. 
+To install the discord.py package in the command prompt using the command `pip install discord.py`. 
 For a guidde on the installation, click [here](https://pypi.org/project/discord.py/). 
 Note that discord.py only works with **Python 3.5+**.
 
