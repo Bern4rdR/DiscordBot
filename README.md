@@ -37,7 +37,7 @@ The latest versoin of **Python** is available [here](https://www.python.org/down
 
 To install the discord.py module in the command prompt using the command `pip install discord.py`. 
 For a guidde on the installation, click [here](https://pypi.org/project/discord.py/). 
-Note that discord.py works with **Python 3.5+**.
+Note that discord.py only works with **Python 3.5+**.
 
 For the requests package, type `pip instal requests` into your command prompt.
   
@@ -49,15 +49,15 @@ WIP
 
 ### Code conventions
 #### File organizing
-Code is split up in different files by order of funktions for easier interaction and to facilitate contributions.
+Code is split up in to different files, by order of functions, for easier interaction and to facilitate contributions.
 
-**Commenting:**  1-line comments are written above the code line to explain its purpose
+**Commenting:**  1-line comments are written above the code line to explain its purpose.
 
-**Naming:**  All files use **snake_case** for variable names
+**Naming:**  All files use **snake_case** for variable names.
 
 
 #### Contributors
-Contribute by adding a feature or clean up some code
+Contribute by adding a feature or clean up some code.
 - WIP
 
 ### Citing
