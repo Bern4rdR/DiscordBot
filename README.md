@@ -15,7 +15,7 @@ A discord bot built in python, on the discord API
 
 ### Introduction
 This project is going to be an automated Discord bot that can respond to members of a server. 
-Functions will include a rock-paper-scissors game that keeps track of the score as well as a scoreboar. Other functions will be to play 8ball or even music.
+Functions will include a rock-paper-scissors game that keeps track of the score as well as a scoreboard. Other functions will be to play 8ball or even music.
 
 **Note:**  Code will have to be adapted, for example every bot has a unique token. Strings that requre additonal information are marked with <angle brackets>, information can be found in the Discord [developer portal](https://discord.com/developers/applications).
 
