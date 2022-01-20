@@ -1,8 +1,8 @@
 import requests
 
 API_ENDPOINT = 'https://discord.com/api/v8'
-CLIENT_ID = '767711424339509249'
-CLIENT_SECRET = 'Vb7Ct7AIQ2BiiASM0D1CnQWTQ4yAPEuS'
+CLIENT_ID = '<client id>'
+CLIENT_SECRET = '<client secret>'
 REDIRECT_URI = "https://google.com"
 
 class User:
@@ -28,8 +28,8 @@ def exchange_code(code):
     return r.json()
 
 def add_to_guild(access_token, userID):
-    url = API_ENDPOINT + "/guilds/933716518431248445/members/" + userID
-    botToken = 'NzY3NzExNDI0MzM5NTA5MjQ5.X414-g.1Zc2D39O61DiwnieQNpnjEri7vI'
+    url = API_ENDPOINT + "/guilds/<guild id>/members/" + userID
+    botToken = '<token>'
 
     data = {'access_token': access_token}
     headers = {
@@ -41,5 +41,5 @@ def add_to_guild(access_token, userID):
 
 
 if __name__ == '__main__':
-    code = exchange_code('vT1AWFajq21CgQLeuYdRna9cWuacUz')['access_token']
-    add_to_guild(code, '376086798457372674')
+    code = exchange_code('<code querry>')['access_token']
+    add_to_guild(code, '<user id>')
