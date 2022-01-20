@@ -41,7 +41,7 @@ Note that discord.py works with **Python 3.5+**.
 
 For the requests package, type `pip instal requests` into your command prompt.
   
-To create your own bot, first you need to create an application in the 
+To create your own bot, first you need to create an application in the [developer portal](https://discord.com/developers/applications).
 
 
 ### Issue tracker
@@ -66,6 +66,7 @@ WIP
 ### Contact
 **Author:**  Bernard R [Bern4rdR]
 **Mail:**  rumarbernard@gmail.com
+**Discord:**  BernHard#6216
 
 ### Changelog
 WIP
