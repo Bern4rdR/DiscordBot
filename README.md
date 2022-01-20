@@ -65,7 +65,9 @@ WIP
 
 ### Contact
 **Author:**  Bernard R [Bern4rdR]
+
 **Mail:**  rumarbernard@gmail.com
+
 **Discord:**  BernHard#6216
 
 ### Changelog
