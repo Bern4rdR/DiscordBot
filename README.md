@@ -2,8 +2,8 @@
 A discord bot built in python, on the discord API
 
 ### Table of contents
-* Todo
 * Introduction
+* Todo
 * Requirements
 * Installation
 * Issue tracker
@@ -13,6 +13,9 @@ A discord bot built in python, on the discord API
 * Contact
 * Changelog
 
+### Introdduction
+This project is going to be an automated Discord bot that can respond to members of a server. 
+Functions will include a rock-paper-scissors game that keeps track of the score as well as a scoreboar. Other functions will be to play 8ball or even music.
 
 ### Todo
 - [ ] Store user information
@@ -23,37 +26,42 @@ A discord bot built in python, on the discord API
 
 
 ### Requirements
-- python 3
+- python 3.5+
 - discord.py module
+- requests module
 
 ### Installation
-´´´
-pip install discord.py
-´´´
+The latest versoin of **Python** is available [here](https://www.python.org/downloads/).
+
+To install the discord.py module in the command prompt using the command `pip install discord.py`. 
+For a guidde on the installation, click [here](https://pypi.org/project/discord.py/). 
+Note that discord.py works with **Python 3.5+**.
+
+For the requests package, type `pip instal requests` into your command prompt.
+
 
 ### Issue tracker
-
+WIP
 
 ### Code conventions
 #### File organizing
+Code is split up in different files by order of funktions for easier interaction and to facilitate contributions.
 
-**Commenting:**  1-line comments above the code line
+**Commenting:**  1-line comments are written above the code line to explain its purpose
 
-**Naming:**  snake_case
+**Naming:**  All files use **snake_case** for variable names
 
-**Praxis:**
-
-
-### Contribution
-Contribute by adding a feature or clean up som code
 
 #### Contributors
-
+Contribute by adding a feature or clean up some code
+- WIP
 
 ### Citing
-
+WIP
 
 ### Contact
+**Author:**  Bernard R [Bern4rdR]
 **Mail:**  rumarbernard@gmail.com
 
 ### Changelog
+WIP
