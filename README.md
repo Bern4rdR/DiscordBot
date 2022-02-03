@@ -72,3 +72,6 @@ WIP
 
 ### Changelog
 WIP
+
+### Licence
+[MIT](https://choosealicense.com/licenses/mit/)
