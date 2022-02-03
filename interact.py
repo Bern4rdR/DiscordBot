@@ -5,11 +5,14 @@ CLIENT_ID = '<<client id>>'
 CLIENT_SECRET = '<<client secret>>'
 REDIRECT_URI = "https://google.com"
 
-class User:
-    """Every users personal connection to the bot, storing information about the user"""
-    def __init__(self, username, id):
-        self.username = username
-        self.id = id
+
+"""
+Function  exchange_code(code):
+  returns a code that is used in 'add_to_guild'.
+
+Function  add_to_guild(exchange_code, user_id):
+  adds the user with matching user id to the server.
+"""
 
 
 def exchange_code(code):
@@ -38,8 +41,3 @@ def add_to_guild(access_token, userID):
         }
     response = requests.put(url = url, headers=headers, json=data)
     print(response.text)
-
-
-if __name__ == '__main__':
-    code = exchange_code('<<code querry>>')['access_token']
-    add_to_guild(code, '<<user id>>')
