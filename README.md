@@ -20,8 +20,8 @@ Functions will include a rock-paper-scissors game that keeps track of the score 
 **Note:**  Code will have to be adapted, for example every bot has a unique token. Strings that requre additonal information are marked with <angle brackets>, information can be found in the Discord [developer portal](https://discord.com/developers/applications).
 
 ### Todo
-- [ ] Store user information
-- [ ] Rock-paper-scissors
+- [x] Store user information
+- [x] Rock-paper-scissors
 - [ ] 8ball
 - [ ] Dice
 - [ ] Play music
@@ -45,7 +45,8 @@ To create your own bot, first you need to create an application in the [develope
 
 
 ### Issue tracker
-WIP
+- `interact.py` --> Adding member: not automated
+- `main.py` --> Does not permanently store users
 
 ### Code conventions
 #### File organizing
@@ -66,7 +67,7 @@ WIP
 ### Contact
 **Author:**  Bernard R [Bern4rdR]
 
-**Mail:**  rumarbernard@gmail.com
+**Mail:**  [rumarbernard@gmail.com](mailto:rumarbernard@gmail.com)
 
 **Discord:**  BernHard#6216
 
