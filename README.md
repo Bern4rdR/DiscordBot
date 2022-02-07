@@ -22,8 +22,9 @@ Functions will include a rock-paper-scissors game that keeps track of the score 
 ### Todo
 - [x] Store user information
 - [x] Rock-paper-scissors
-- [ ] 8ball
-- [ ] Dice
+- [x] 8ball
+- [x] Dice
+- [ ] Search stock prices
 - [ ] Play music
 
 
@@ -72,7 +73,20 @@ WIP
 **Discord:**  BernHard#6216
 
 ### Changelog
-WIP
-
+**v0.1**
+  Added:
+  - Manualy add a user through the bot
+  
+**v0.2**
+  Added:
+  - MINIGAME: Rock paper sissors
+  
+**v0.3**
+  Added:
+  - MINIGAME: dice
+  - MINIGAME: magic 8ball
+  Fixed:
+  - RPS not running if it creats new user
+  
 ### Licence
 [MIT](https://choosealicense.com/licenses/mit/)
