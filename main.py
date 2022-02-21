@@ -73,7 +73,6 @@ if __name__ == '__main__':
     async def log_mesages(ctx):
         r = requests.get(URL, headers=HEADER).json()
         for message in r:
-            print(message['author']['username'] + ':  ' + message['content'])
             user_indx = find_user(message['author']['username'], message['author']['id'])
             users[user_indx].log_msg(message['content'])
         await ctx.send('This channel was logged')
