@@ -22,6 +22,7 @@ class User:
         self.username = str(username)
         self.id = str(id)
         self.rps_tally = 0
+        self.msg_hist = []
 
     def __str__(self):
         retstr = f'Name: {self.username}'
@@ -47,3 +48,12 @@ class User:
             return random.choice(LOOSE_ANSWERS)
         elif move1 == move2:
             return random.choice(DRAW_ANSWERS)
+    
+    def log_msg(self, message):
+        if not message in self.msg_hist:
+            self.msg_hist.append(message)
+
+    def ret_msg_hist(self, ammount):
+        if ammount >= len(self.msg_hist):
+            return self.msg_hist[:ammount]
+        else: return self.msg_hist[:ammount]
