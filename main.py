@@ -13,15 +13,44 @@ import requests
 INTENTS = discord.Intents(messages = True, guilds = True, reactions = True,
                           members = True, presences = True)
 # Bot account
-CLIENT = commands.Bot(command_prefix = '', intents = INTENTS)
+CLIENT = commands.Bot(command_prefix = '?', intents = INTENTS)
+
+# Message Log
+URL = 'https://discord.com/api/v9/channels/<<channel id>>/messages'
+HEADER = {
+    'authorization': '<<user token>>'
+    }
+
+COMMANDS = ['dice + sides (optional) --> roll a die',
+            '8ball + question --> ask the magic 8ball a question',
+            'rps + choice --> play rock-paper-sissors against the bot',
+            'log --> log the last 50 messages in chat',
+            'hist + ammount --> show your fist messages']
+
+users = []
+
+def find_user(username, user_id):
+    user_exists = False
+    for user in users:
+        if str(user_id) == user.id:
+            user_exists = True
+            return users.index(user)
+            break
+    if not user_exists:
+        print(f'Created new user {username}')
+        users.append(User(username, user_id))
+        return -1
 
 
 if __name__ == '__main__':
-    users = []
-
     @CLIENT.event 
     async def on_ready():
         print('Beep. Boop. . Bot is Ready')
+
+    @CLIENT.command(aliases=['help', 'commands', 'command'])
+    async def commands(ctx):
+        for com in COMMANDS:
+            await ctx.send(com)
 
     @CLIENT.command(aliases=['dice', 'd6'])
     async def _dice(ctx, *, size=6):
@@ -35,21 +64,26 @@ if __name__ == '__main__':
         
     @CLIENT.command(aliases=['rps'])
     async def rock_paper_sissors(ctx, *, choice):
-        user_exists = False
-        for user in users:
-            if user.id == str(ctx.author.id):
-                for response in user.rps(choice):
-                    await ctx.send(response)
-                    time.sleep(.3)
-                user_exists = True
-                break
-        # Adds a user if none exist
-        if not user_exists:
-            print(f'Created new user: {ctx.author.name}')
-            users.append(User(ctx.author.name, ctx.author.id))
-            for response in users[-1].rps(choice):
-                await ctx.send(response)
-                time.sleep(.3)
+        user_indx = find_user(ctx.author.name, ctx.author.id)
+        for response in users[user_indx].rps(choice):
+            await ctx.send(response)
+            time.sleep(.3)
+    
+    @CLIENT.command(aliases=['log', 'save'])
+    async def log_mesages(ctx):
+        r = requests.get(URL, headers=HEADER).json()
+        for message in r:
+            print(message['author']['username'] + ':  ' + message['content'])
+            user_indx = find_user(message['author']['username'], message['author']['id'])
+            users[user_indx].log_msg(message['content'])
+        await ctx.send('This channel was logged')
+
+    @CLIENT.command(aliases=['history', 'hist'])
+    async def get_msg_hist(ctx, *, ammount):
+        await ctx.send(f'Your first {ammount} messages were:')
+        user_indx = find_user(ctx.author.name, ctx.author.id)
+        for message in users[user_indx].ret_msg_hist(int(ammount)):
+            await ctx.send(message)
     
     # Key to the bot
     CLIENT.run('<<bot token>>')
