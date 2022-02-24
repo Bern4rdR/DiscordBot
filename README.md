@@ -16,6 +16,7 @@ A discord bot built in python, on the discord API
 
 ### Project description
 This project is going to be an automated Discord bot that can respond to members of a server. 
+A member will type a command in a channel and recieve a responce from the bot.
 Functions will include a rock-paper-scissors game that keeps track of the score as well as a scoreboard. 
 Other functions will be to play 8ball or maybe even music. The prefix used to activate the bot will default to `?` 
 but anyone with access to the code will be able to change it.
@@ -30,6 +31,7 @@ information can be found in the Discord [developer portal](https://discord.com/d
 - [x] 8ball
 - [x] Dice
 - [x] Message history
+- [ ] Scoreboard
 - [ ] Play music
 
 
