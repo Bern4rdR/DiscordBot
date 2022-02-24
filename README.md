@@ -2,10 +2,11 @@
 A discord bot built in python, on the discord API
 
 ### Table of contents
-* Introduction
+* Project description
 * Todo
 * Requirements
 * Installation
+* Testrun
 * Issue tracker
 * Code conventions
 * Contribution
@@ -13,7 +14,7 @@ A discord bot built in python, on the discord API
 * Contact
 * Changelog
 
-### Introduction
+### Project description
 This project is going to be an automated Discord bot that can respond to members of a server. 
 Functions will include a rock-paper-scissors game that keeps track of the score as well as a scoreboard. 
 Other functions will be to play 8ball or maybe even music. The prefix used to activate the bot will default to `?` 
@@ -48,6 +49,31 @@ For the requests package, type `pip install requests` into your command prompt.
   
 To create your own bot, first you need to create an application in the [developer portal](https://discord.com/developers/applications).
 
+### Testrun
+Teminal:
+```
+Beep. Boop. . Bot is Ready
+```
+
+Discord channel:
+```
+>>> ?commands
+dice + sides (optional) --> roll a die
+8ball + question --> ask the magic 8ball a question
+rps + choice --> play rock-paper-sissors against the bot
+log --> log the last 50 messages in chat
+hist + ammount --> show your fist messages
+
+>>> ? rps rock
+ROCK vs PAPER
+You LOOSE!
+
+>>> ?dice
+6
+
+>>> ?8ball Will it rain today?
+Most likely
+```
 
 ### Issue tracker
 - `interact.py` --> Adding member: not automated
@@ -63,8 +89,10 @@ Code is split up in to different files, by order of functions, for easier intera
 **Naming:**  All files use **snake_case** for variable names as in standard PEP8.
 
 
-#### Contributors
-Contribute by adding a feature or clean up some code.
+### Contributors
+This is a scool project and it will get a faling grade if someone other than me (the creator). 
+After the grading, pull requests will gladly be accepted and new features would be appreciated.
+
 - WIP
 
 ### Citing
