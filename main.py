@@ -17,6 +17,8 @@ CLIENT = commands.Bot(command_prefix = '?', intents = INTENTS)
 
 # Message Log
 URL = 'https://discord.com/api/v9/channels/<<channel id>>/messages'
+
+# Required for message logging
 HEADER = {
     'authorization': '<<user token>>'
     }
@@ -25,7 +27,8 @@ COMMANDS = ['dice + sides (optional) --> roll a die',
             '8ball + question --> ask the magic 8ball a question',
             'rps + choice --> play rock-paper-sissors against the bot',
             'log --> log the last 50 messages in chat',
-            'hist + ammount --> show your fist messages']
+            'hist + ammount --> show your fist messages',
+            'add + uaer id --> add that person']
 
 users = []
 
@@ -47,8 +50,8 @@ if __name__ == '__main__':
     async def on_ready():
         print('Beep. Boop. . Bot is Ready')
 
-    @CLIENT.command(aliases=['help', 'commands', 'command'])
-    async def commands(ctx):
+    @CLIENT.command(aliases=['commands', 'command'])
+    async def _help(ctx):
         for com in COMMANDS:
             await ctx.send(com)
 
@@ -84,5 +87,11 @@ if __name__ == '__main__':
         for message in users[user_indx].ret_msg_hist(int(ammount)):
             await ctx.send(message)
     
+    @CLIENT.command(aliases=['add'])
+    async def add_user(ctx, *, user_id):
+        # Find this code in the link that updates when bot is authorized
+        code = interact.exchange_code('<<authenication code>>')['access_token']
+        interact.add_to_guild(code, user_id)
+        
     # Key to the bot
     CLIENT.run('<<bot token>>')
