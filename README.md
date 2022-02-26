@@ -27,6 +27,11 @@ but anyone with access to the code will be able to change it.
 Strings that requre additonal information are surrounded by two angle brackets `<< >>`, 
 information can be found in the Discord [developer portal](https://discord.com/developers/applications).
 
+The folowing class is used in this project:
+
+![image](https://user-images.githubusercontent.com/96416409/155847726-61b6544d-ab42-4f44-a8b2-5eb41a8d58c4.png)
+
+
 
 ### Todo
 - [x] Store user information
