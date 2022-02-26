@@ -1,6 +1,7 @@
 # DiscordBot
 A discord bot built in python, on the discord API
 
+
 ### Table of contents
 * Project description
 * Todo
@@ -14,6 +15,7 @@ A discord bot built in python, on the discord API
 * Contact
 * Changelog
 
+
 ### Project description
 This project is going to be an automated Discord bot that can respond to members of a server. 
 A member will type a command in a channel and recieve a responce from the bot.
@@ -24,6 +26,7 @@ but anyone with access to the code will be able to change it.
 **Note:**  Code will have to be adapted, for example every bot has a unique token. 
 Strings that requre additonal information are surrounded by two angle brackets `<< >>`, 
 information can be found in the Discord [developer portal](https://discord.com/developers/applications).
+
 
 ### Todo
 - [x] Store user information
@@ -40,6 +43,7 @@ information can be found in the Discord [developer portal](https://discord.com/d
 - discord.py module
 - requests module
 
+
 ### Installation
 The latest versoin of **Python** is available [here](https://www.python.org/downloads/).
 
@@ -51,7 +55,8 @@ For the requests package, type `pip install requests` into your command prompt.
   
 To create your own bot, first you need to create an application in the [developer portal](https://discord.com/developers/applications).
 
-### Testrun
+
+### Example run
 Teminal:
 ```
 Beep. Boop. . Bot is Ready
@@ -77,10 +82,13 @@ You LOOSE!
 Most likely
 ```
 
+
 ### Issue tracker
 - `interact.py` --> Adding member: not automated
 - `main.py` --> Does not permanently store users
 - music requres module, not an API
+- sometimes adding people doesn't work (above my pay grade)
+
 
 ### Code conventions
 #### File organizing
@@ -97,12 +105,14 @@ After the grading, pull requests will gladly be accepted and new features would 
 
 - WIP
 
+
 ### Citing
 Paste this text into the top of your main file:
 
 "All or part of this project uses code that was written by Bern4rdR
 
 Repository: https://github.com/Bern4rdR/DiscordBot"
+
 
 ### Contact
 **Author:**  Bernard R [Bern4rdR]
@@ -111,28 +121,39 @@ Repository: https://github.com/Bern4rdR/DiscordBot"
 
 **Discord:**  BernHard#6216
 
+
 ### Changelog
 **v0.1**
+  
   Added:
   - Manualy add a user through the bot
   
 **v0.2**
+  
   Added:
   - MINIGAME: Rock paper sissors
   
 **v0.3**
+  
   Added:
   - MINIGAME: dice
   - MINIGAME: magic 8ball
+  
   Fixed:
   - RPS not running if it creats new user
 
 **v0.4**
-
-Added:
+  
+  Added:
   - FEATURE: log the last 50 messages
   - FEATURE: recieve your first messages
   - FEATURE: help command
   
+**v0.5**
+
+  Fixed:
+  - Can now add user trough command
+
+
 ### Licence
 [MIT](https://choosealicense.com/licenses/mit/)
